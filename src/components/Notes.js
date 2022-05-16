@@ -10,7 +10,7 @@ function Notes() {
     const handleDestroy = (id) => {
         dispatch(removeNote(id))
     }
-
+ 
     const filtered = useSelector(state => state.notes.filtered)
 
     return (

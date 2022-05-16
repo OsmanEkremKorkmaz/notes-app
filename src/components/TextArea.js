@@ -19,7 +19,7 @@ function TextArea() {
         dispatch(addNote({id: nanoid() ,text, color}))
         dispatch(filter())
         }
-        setText('')
+        setText('') 
     }
   return (
     <>

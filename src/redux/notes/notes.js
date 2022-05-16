@@ -45,7 +45,7 @@ export const notes = createSlice({
         setSearch: (state, action) => {
             state.search = action.payload
         }
-    }
+    } 
 })
 
 export const { addNote, removeNote, filter, setSearch } = notes.actions
