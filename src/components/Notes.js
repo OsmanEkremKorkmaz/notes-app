@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from "react-redux"
-import { removeNote } from '../redux/notes/notes'
+import { filter, removeNote } from '../redux/notes/notes'
 
 function Notes() {
 
@@ -9,6 +9,7 @@ function Notes() {
 
     const handleDestroy = (id) => {
         dispatch(removeNote(id))
+        dispatch(filter())
     }
  
     const filtered = useSelector(state => state.notes.filtered)
